@@ -7,3 +7,6 @@ Descripcion ::
   * mover un objeto
   * un muro que no pueda atravesar un objeto
   * ajustar la cmara con el mouse
+
+EXAM :
+  robot war
