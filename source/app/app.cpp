@@ -27,10 +27,10 @@ void App::Event(){
 void App::Update(){
    
   sceneMain.Update();
-  glfwSwapBuffers(window);
 }
 void App::Render(){
   sceneMain.Render();
+  glfwSwapBuffers(window);
   glClear(GL_COLOR_BUFFER_BIT );
   glClearColor(_color.red,_color.green,_color.blue,_color.alpha);
 }
