@@ -26,8 +26,6 @@ void One::Init(){
   };
   obj->Init("./shader/vertex.frag", "./shader/frag.frag", vertices, sizeof(vertices) , indices , sizeof(indices) );
   obj->Render();
-  obj2->Init("./shader/vertex.frag", "./shader/frag.frag", vertices, sizeof(vertices) , indices , sizeof(indices) );
-  obj2->Render();
 
 };
 void One::Update(){

@@ -13,6 +13,5 @@ class One{
     bool isRun;
   private:
     ObjetAbs* obj; 
-    ObjetAbs* obj2; 
 };
 
