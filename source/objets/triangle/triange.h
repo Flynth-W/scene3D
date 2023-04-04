@@ -1,7 +1,5 @@
 #pragma once
 #include "../abstract.h"
-#include "../../utils/handleShader/headerShader.h"
-#include "../../utils/buffer/buff.h"
 // shader class
 #include "./../Shader/Shader.h"
 
