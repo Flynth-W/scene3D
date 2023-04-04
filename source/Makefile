@@ -1,6 +1,7 @@
 OBJS = ./main.o ./app/app.o ./scene/one/one.o \
 			 ./objets/triangle/triangle.o \
-			 ./objets/Shader/Shader.o
+			 ./objets/Shader/Shader.o \
+			 ./objets/cube/cube.o 
 
 
 FILE_BIN = .main.bin
