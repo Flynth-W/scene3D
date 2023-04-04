@@ -1,7 +1,10 @@
 OBJS = ./main.o ./app/app.o ./scene/one/one.o \
 			 ./objets/triangle/triangle.o \
 			 ./utils/handleShader/headerShader.o \
-			 ./utils/buffer/buff.o 
+			 ./utils/buffer/buff.o  \
+			 ./objets/Shader/Shader.o
+
+
 FILE_BIN = .main.bin
 LIBS = -lGL -lglfw -lGLEW
 CFLAGS = -Wall
