@@ -2,7 +2,6 @@
 
 
 void One::Init(){
-  obj = new Trinagle();
   float vertices[] = {
       // positions          // texture coords
       // 0.2f,  0.2f, 0.0f,   1.0f, 1.0f, // top right
@@ -24,14 +23,18 @@ void One::Init(){
       0, 1, 3, // first triangle
       1, 2, 3  // second triangle
   };
-  obj->Init("./shader/vertex.frag", "./shader/frag.frag", vertices, sizeof(vertices) , indices , sizeof(indices) );
-  obj->Render();
+  
+  obj1 = new Triangle();
+  obj1->addShader("./shader/vertex.frag", "./shader/frag.frag");
+  obj1->addBuffer(vertices, sizeof(vertices), indices, sizeof(indices) ) ;
 
 };
 void One::Update(){
-  obj->Update();
+
 };
 void One::Render(){
+  obj1->Renderer();
+
 };
 void One::Release(){};
 

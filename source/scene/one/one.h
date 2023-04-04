@@ -12,6 +12,6 @@ class One{
     void Release();
     bool isRun;
   private:
-    ObjetAbs* obj; 
+    Objet * obj1 ;
 };
 
