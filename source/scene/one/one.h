@@ -13,5 +13,6 @@ class One{
     bool isRun;
   private:
     Objet * obj1 ;
+    Objet * obj2 ;
 };
 

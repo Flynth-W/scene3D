@@ -27,13 +27,23 @@ void One::Init(){
   obj1 = new Triangle();
   obj1->addShader("./shader/vertex.frag", "./shader/frag.frag");
   obj1->addBuffer(vertices, sizeof(vertices), indices, sizeof(indices) ) ;
+  float vertices2[] = { 
+      -0.2f,  0.2f, 0.0f,   1.0f, 1.0f, // top right
+      -0.2f, -0.2f, 0.0f,   1.0f, 0.0f, // bottom right
+      -0.6f, -0.2f, 0.0f,   0.0f, 0.0f, // bottom left
+      -0.6f,  0.2f, 0.0f,   0.0f, 1.0f  // top left 
+      } ;
 
+  obj2 = new Triangle();
+  obj2->addShader("./shader/vertex.frag", "./shader/frag2.frag");
+  obj2->addBuffer(vertices2, sizeof(vertices2), indices, sizeof(indices) ) ;
 };
 void One::Update(){
 
 };
 void One::Render(){
   obj1->Renderer();
+  obj2->Renderer();
 
 };
 void One::Release(){};
