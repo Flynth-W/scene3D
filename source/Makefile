@@ -1,7 +1,5 @@
 OBJS = ./main.o ./app/app.o ./scene/one/one.o \
 			 ./objets/triangle/triangle.o \
-			 ./utils/handleShader/headerShader.o \
-			 ./utils/buffer/buff.o  \
 			 ./objets/Shader/Shader.o
 
 
