@@ -1,6 +1,7 @@
 #pragma once
 #include "../../objets/abstract.h"
 #include "../../objets/triangle/triange.h"
+#include "../../objets/cube/cube.h"
 
 class One{
   public:
@@ -14,5 +15,6 @@ class One{
   private:
     Objet * obj1 ;
     Objet * obj2 ;
+    Objet * cube1;
 };
 
